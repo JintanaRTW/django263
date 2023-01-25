@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+<!DOCTYPE html>
+{% load static %}
+{% block content %}
+     <div class="mt-4 p-5 bg-primary text-white rounded text-center">
+        <h1>Welcome to Shopping </h1>
+    </div>
+   <div class="row text">
+        &nbsp &nbsp &nbsp
+            <div class="card" style="width:300px">
+              <img class="card-img-top" src="{% static 'images/adi.jpg' %}" alt="Card image">
+              <div class="card-body">
+                <h3 class="card-title text-dark">PIENI UNIKKO BAG 44X43CM ฿4,500.00</h3>
+                <p class="card-text"></p>
+                <a href="#" class="btn btn-success">สั่งซื้อ</a>
+              </div>
+            </div>
+        &nbsp &nbsp &nbsp
+            <div class="card" style="width:300px">
+              <img class="card-img-top" src="{% static 'images/con.jpg' %}" alt="Card image">
+              <div class="card-body">
+                <h3 class="card-title text-dark">PIENI UNIKKO BAG 44X43CM ฿3,200.00 </h3>
+                <p class="card-text"></p>
+                <a href="#" class="btn btn-success">สั่งซื้อ</a>
+              </div>
+            </div>
+        &nbsp &nbsp &nbsp
+            <div class="card" style="width:300px">
+              <img class="card-img-top" src="{% static 'images/nit.jpg' %}" alt="Card image">
+              <div class="card-body">
+                <h3 class="card-title text-dark">PIENI UNIKKO BAG 44X43 CM ฿6,000.00</h3>
+                <p class="card-text"></p>
+                <a href="#" class="btn btn-success">สั่งซื้อ</a>
+              </div>
+            </div>
+        &nbsp &nbsp &nbsp
+            <div class="card" style="width:300px">
+              <img class="card-img-top" src="{% static 'images/poo.jpg' %}" alt="Card image">
+              <div class="card-body">
+                <h3 class="card-title text-dark">Kompotti Bag 44X43cm ฿3,500.00</h3>
+                <p class="card-text"></p>
+                <a href="#" class="btn btn-success">สั่งซื้อ</a>
+              </div>
+            </div>
+        </div>
+    </body>
+    </html>
+
+{% endblock %}
+

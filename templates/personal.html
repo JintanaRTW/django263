@@ -1,0 +1,133 @@
+{% extends 'base.html' %}
+{% load static %}
+<!DOCTYPE html>
+{% block content %}
+
+    <div class="container-fluid">
+        <div class="row bg-white">
+            <div class="col-lg-8">
+                <br>
+                <div>
+                    <img class="card-img-top" src="{% static 'images/2001.jpg' %}" alt="Card image">
+                </div>
+                <br>
+                <div id="accordion">
+                    <div class="card">
+                        <div class="card-header" style="background-color: #F8444F">
+                            <a class="btn text-white" data-bs-toggle="collapse" href="#collapseOne">
+                                <h5>ประวัติทั่วไป</h5>
+                            </a>
+                        </div>
+                        <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+                            <div class="card-body"><h6>
+                                &nbsp &nbsp &nbsp &nbsp * ชื่อ-สกุล : นางสาวจินตนา รัตนะวัน (Ms.Jintana Rattanawan)<br>
+                                &nbsp &nbsp &nbsp &nbsp * ชื่อเล่น : แนนแนน (Nannan)<br>
+                                &nbsp &nbsp &nbsp &nbsp * วัน เดือน ปี เกิด : 9 มีนาคม พ.ศ. 2544 (9 March 2001)<br>
+                                &nbsp &nbsp &nbsp &nbsp * อายุ : 21 ปี <br>
+                                &nbsp &nbsp &nbsp &nbsp * สัญชาติ : ไทย (Thai)<br>
+                                &nbsp &nbsp &nbsp &nbsp * เชื้อชาติ : ไทย (Thai)<br>
+                                &nbsp &nbsp &nbsp &nbsp * ศาสนา : พุทธ (Buddhism)<br>
+                                &nbsp &nbsp &nbsp &nbsp * ที่อยู่ : บ้านเลขที่ 106/1 หมู่ 4 ตำบลหนองอึ่ง อำเภอราษีไศล
+                                จังหวัดศรีสะเกษ 33160 <br>
+                            </h6>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+
+                    <div class="card">
+                        <div class="card-header" style="background-color: #C0EA6A">
+                            <a class="btn text-white" data-bs-toggle="collapse" href="#collapseTwo">
+                                <h5>ประวัติครอบครัว</h5>
+                            </a>
+                        </div>
+                        <div id="collapseTwo" class="collapse show" data-bs-parent="#accordion">
+                            <div class="card-body">
+                                <h6>
+                                    &nbsp &nbsp &nbsp &nbsp * บิดาชื่อ : นายจรัลธร รัตนะวัน <br>
+                                    &nbsp &nbsp &nbsp &nbsp * มารดาชื่อ : นางสาวพิศมัย จันทะศิลา<br>
+                                    &nbsp &nbsp &nbsp &nbsp * มีพี่น้องทั้งหมด 2 คน ผู้ชาย 1 คน ดิฉันเป็นพี่คนโต<br>
+                                    &nbsp &nbsp &nbsp &nbsp * ที่อยู่ : บ้านเลขที่ 106/1 หมู่ 4 ตำบลหนองอึ่ง
+                                    อำเภอราษีไศล จังหวัดศรีสะเกษ 33160 <br>
+                                </h6>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+
+
+                    <div class="card">
+                        <div class="card-header" style="background-color: #FFCC59">
+                            <a class="btn text-white" data-bs-toggle="collapse" href="#collapseThree">
+                                <h5>งานอดิเรก</h5>
+                            </a>
+                        </div>
+                        <div id="collapseThree" class="collapse show" data-bs-parent="#accordion">
+                            <div class="card-body">
+                                <h6>
+                                    &nbsp &nbsp &nbsp &nbsp * ดูหนัง (ซีรี่ย์วาย,ฟังเพลง)<br>
+                                    &nbsp &nbsp &nbsp &nbsp * ฟังเพลง (String music)<br>
+                                    &nbsp &nbsp &nbsp &nbsp * เล่นเกม (ROV)<br>
+                                </h6>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+
+
+                    <div class="card">
+                        <div class="card-header" style="background-color: #5EE2F1">
+                            <a class="btn text-white" data-bs-toggle="collapse" href="#collapseFour">
+                                <h5>คติประจำใจ</h5>
+                            </a>
+                        </div>
+                        <div id="collapseFour" class="collapse show" data-bs-parent="#accordion">
+                            <div class="card-body text-center">
+                                <h5>"จะแพ้ได้ไง ผื่นยังไม่ขึ้นเลย"</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <img class="card-img-top" src="{% static 'images/Nan.jpg' %}" alt="Card image">
+                <br>
+                <br>
+                <h6>ช่องทางการติดต่อ : </h6>
+                <div class="row text alert alert-info">
+                    <div class="row text">
+                        <div class="col-lg-3">
+                            <a href="https://www.facebook.com/profile.php?id=100008554810826" target="_blank">
+                                <img src="{% static 'images/f2.jpg' %}" width="300px" height="200"
+                                     class="img-thumbnail">
+                            </a>
+                        </div>
+
+                        <div class="col-lg-3">
+                            <a href="https://www.instagram.com/prem_2002_45/" target="_blank">
+                                <img src="{% static 'images/t3.png' %}" width="300px" height="200"
+                                     class="img-thumbnail">
+                            </a>
+                        </div>
+
+                        <div class="col-lg-3">
+                            <a href="https://www.facebook.com/profile.php?id=100008554810826" target="_blank">
+                                <img src="{% static 'images/i4.jpg' %}" width="300px" height="200"
+                                     class="img-thumbnail">
+                            </a>
+                        </div>
+
+                        <div class="col-lg-3">
+                            <a href="https://twitter.com/Prem2002451" target="_blank">
+                                <img src="{% static 'images/L1.png' %}" width="300px" height="200"
+                                     class="img-thumbnail">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+{% endblock %}

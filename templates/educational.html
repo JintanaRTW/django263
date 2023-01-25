@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+<!DOCTYPE html>
+{% load static %}
+{% block content %}
+
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+<div class="container mt-3">
+  <h1 class="text-center text-info "> ประวัติการศึกษา </h1>
+  <p>:</p>
+  <div class="alert alert-info">
+    <strong>1.</strong> จบชั้นมัธยมศึกษาปีที่3 จากโรงเรียนบ้านโต่งโต้น เมื่อปี พ.ศ 2560
+  </div>
+  <div class="alert alert-warning">
+    <strong>2.</strong> จบชั้นประกาศนียบัตรวิชาชีพ จากวิทยาลัยเทคนิคราษีไศล เมื่อปี พ.ศ 2563
+  </div>
+  <div class="alert alert-danger">
+    <strong>3.</strong> จบชั้นประกาศนียบัตรวิชาชีพชั้นสูง จากวิทยาลัยเทคนิคราษีไศล เมื่อปี พ.ศ 2565
+  </div>
+  <div class="alert alert-primary">
+    <strong>4.</strong> ปัจจุบันศึกษาอยู่มหาวิทยาลัยเทคโนโลยีราชมงคลอีสาน วิทยาเขตขอนแก่น
+  </div>
+    </div>
+
+</body>
+</html>
+{% endblock %}

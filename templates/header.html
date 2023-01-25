@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+{% load static %}
+
+<nav class="navbar navbar-expand-sm navbar-dark text-dark" style="background-color: #bb2d3b">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'home' %}">home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'personal' %}">personal</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'sale' %}">sale</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'educational' %}">educational</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'rolemodel' %}">rolemodel</a>
+                </li>
+                 <li class="nav-item">
+                    <a class="nav-link" href="{% url 'interests' %}">interests</a>
+                </li>
+                </li>
+                 <li class="nav-item">
+                    <a class="nav-link" href="{% url 'showMyData' %}">showMyData</a>
+                </li>
+            </ul>
+            <form class="d-flex">
+                <input class="form-control me-2" type="text" placeholder="Search">
+                <button class="btn btn-primary" type="button">Search</button>
+            </form>
+        </div>
+    </div>
+</nav>
+
+<div class="container-fluid mt-3">
+    <h3></h3>
+    <p></p>
+</div>

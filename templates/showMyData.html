@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% load fontawesome_5 %}
+{% fontawesome_5_static %}
+{% load static %}
+<!DOCTYPE html>
+{% block content %}
+
+    <p></p>
+
+    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <div class="alert alert-light">
+    <strong></strong>
+    <div class="container mt-3">
+        <b><p class="container-fluid text-black text-warning"></b>
+        <h5><b>รหัสนักศึกษา: </b>{{ showID }}</h5>
+        <h5><b>ชื่อนักศึกษา :</b> {{ showName }}</h5>
+        <h5><b>ที่อยู่นักศึกษา :</b> {{ showAddress }}</h5>
+        <h5><b>เบอร์โทร :</b> {{ showtel }}</h5>
+        <h5><b>เพศ :</b> {{ showgender }}</h5>
+        <h5><b>วันเกิด :</b> {{ showBirthday }}</h5>
+        <h5><b>น้ำหนัก :</b> {{ showWeight }}</h5>
+        <h5><b>ส่วนสูง :</b> {{ showHeight }}</h5>
+        <h5><b>สถานะ :</b> {{ showstatus }}</h5>
+        <h5><b>มหาวิทยาลัย :</b> {{ showSchool }}</h5>
+    </div>
+
+    <div class='card-img-top'>
+    <table class="table table-dark table-hover">
+        <tr class="text-center text-warning">
+            <td><b>Product Name </b></td>
+            <td><b>Product Price </b></td>
+            <td><b>Product Images </b></td>
+            &nbsp;&nbsp;
+        </tr>
+
+        {% for product in products %}
+            <tr>
+                <td>{{ product.0 }}</td>
+                <td class="text-center text-info">{{ product.1 }}</td>
+                <td class="text-center text-warning"><img class="img img-thumbnail" src="{{ product.2 }}"></td>
+
+            </tr>{% endfor %}
+
+    </table>
+{% endblock %}
+<br>
+</div>
+</div>

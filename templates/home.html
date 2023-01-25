@@ -1,0 +1,107 @@
+{% extends 'base.html' %}
+{% load static %}
+<!DOCTYPE html>
+{% block content %}
+    <br>
+
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+        </div>
+
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="{% static 'images/17.png' %}" alt="Nan1" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+                <img src="{% static 'images/18.png' %}" alt="Nan2" class="d-block w-100">
+            </div>
+        </div>
+
+        <!-- Left and right controls/icons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <marquee behavior="scroll" direstion="left" class="text-info"><h1> Welcome To Personal Nan Jintana </h1></marquee>
+
+    <br>
+
+    <div class="container-fluid text-center">
+        <div class="row bg-white">
+            <div class="col-lg-6">
+                <div class="card" style="width:630px ; height: 724px">
+                    <img class="card-img-top" src="{% static 'images/R5.png' %}" alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title">ร้านค้า</h4>
+                        <p class="card-text"></p>
+                        <a href="{% url 'sale' %}" class="btn btn-success">เพิ่มเติม</a>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <br>
+
+            <div class="col-lg-3 text-center">
+                <div>
+                    <div class="card" style="width:300px; height: 350px">
+                        <img class="card-img-top" src="{% static 'images/y12.png' %}" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">ประวัติส่วนตัว</h4>
+                            <p class="card-text"></p>
+                            <a href="{% url 'personal' %}" class="btn btn-success">เพิ่มเติม</a>
+                        </div>
+                    </div>
+                </div>
+                <br> <br> <br> <br> <br> <br> <br> <br> <br>
+                <div>
+                    <div class="card" style="width:300px; height: 350px">
+                        <img class="card-img-top" src="{% static 'images/a15.png' %}" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">สิ่งที่สนใจ</h4>
+                            <p class="card-text"></p>
+                            <a href="{% url 'interests' %}" class="btn btn-success">เพิ่มเติม</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 text-center">
+                <div>
+                    <div class="card" style="width:300px ; height: 350px">
+                        <img class="card-img-top" src="{% static 'images/k14.png' %}" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">ประวัติการศึกษา</h4>
+                            <p class="card-text"></p>
+                            <a href="{% url 'educational' %}" class="btn btn-success">เพิ่มเติม</a>
+                        </div>
+                    </div>
+                </div>
+                <br> <br> <br> <br> <br> <br> <br> <br> <br>
+                <div>
+                    <div class="card" style="width:300px ; height: 350px">
+                        <img class="card-img-top" src="{% static 'images/u13.png' %}" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">บุคคลต้นแบบ</h4>
+                            <p class="card-text"></p>
+                            <a href="{% url 'rolemodel' %}" class="btn btn-success">เพิ่มเติม</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+{% endblock %}
+
