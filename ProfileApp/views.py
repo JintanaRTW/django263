@@ -18,7 +18,7 @@ def showMyData(request):
     showAddress = "106/1 หมู่ 4 ต.หนองอึ่ง อ.ราษีไศล จ.ศรีสะเกษ"
     showtel = "0957104776"
     showgender = "หญิง"
-    showBirthday = "09 มีนาคม 2001"
+    showBirthday = "09 มีนาคม 2544"
     showWeight = 53
     showHeight = 154
     showstatus = "นักศึกษา"
