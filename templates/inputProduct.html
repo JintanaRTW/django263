@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load fontawesome_5 %}
+{% fontawesome_5_static %}
+{% load static %}
+<!DOCTYPE html>
+{% block content %}
+    <br>
+    <table class="table">
+        <form method="post" class="form form-control">
+            {%csrf_token%}
+            {{form.as_table}}
+            <tr>
+                <td colspan="2" class="text-center">
+                    <input type="submit" value="Save" class="btn btn-success">
+                    <input type="reset" value="Reset" class="btn btn-danger">
+                </td>
+            </tr>
+        </form>
+    </table>
+
+{% endblock %}
+
